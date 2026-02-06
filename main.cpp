@@ -92,7 +92,7 @@ int main(int argc, char** argv) {
 	Gy.write("imgs/Gy.png");
 
 
-	// fun part
+	
 	double threshold = 0.09;
 	double* g = new double[img_size];
 	double* theta = new double[img_size];
@@ -184,6 +184,7 @@ int main(int argc, char** argv) {
 	return 0;
 }
 //*/
+
 
 
 

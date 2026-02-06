@@ -204,7 +204,7 @@ void Image::fft(uint32_t n, std::complex<double> x[], std::complex<double>* X) {
 		memcpy(X, x, n*sizeof(std::complex<double>));
 	}
 
-	//Gentleman-Sande butterfly
+	
 	uint32_t sub_probs = 1;
 	uint32_t sub_prob_size = n;
 	uint32_t half;
@@ -241,7 +241,7 @@ void Image::ifft(uint32_t n, std::complex<double> X[], std::complex<double>* x) 
 		memcpy(x, X, n*sizeof(std::complex<double>));
 	}
 
-	//Cooley-Tukey butterfly
+	
 	uint32_t sub_probs = n>>1;
 	uint32_t sub_prob_size;
 	uint32_t half = 1;
